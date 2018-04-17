@@ -294,21 +294,20 @@
 </footer>
         
     
-    <script>
-    var disqus_config = function () {
-        
-            this.page.url = 'https://huchengzhen.github.io/categories/index.html';
-        
-        this.page.identifier = '';
-    };
-    (function() { 
-        var d = document, s = d.createElement('script');  
-        s.src = '//' + 'blog-huchengzhen-com' + '.disqus.com/embed.js';
-        s.setAttribute('data-timestamp', +new Date());
-        (d.head || d.body).appendChild(s);
-    })();
-</script>
-
+	<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+	<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+	<script>
+		var gitment = new Gitment({
+			owner: 'Huchengzhen',
+			repo: 'gitment-comments',
+			oauth: {
+				client_id: '40cc101b711540039736',
+				client_secret: 'd7c1436fea16365da628d6b8c91739613df644e4',
+			},
+		})
+		gitment.render('commentContainer')
+	</script>
+	
 
 
 

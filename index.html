@@ -267,8 +267,6 @@ window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMin
 
             
     
-        <a href="https://huchengzhen.github.io/2018/04/17/Test/#comments" class="article-comment-link disqus-comment-count" data-disqus-url="https://huchengzhen.github.io/2018/04/17/Test/">评论</a>
-    
 
         </footer>
     </div>
@@ -365,8 +363,6 @@ window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMin
 </div>
 
             
-    
-        <a href="https://huchengzhen.github.io/2018/04/16/hello-world/#comments" class="article-comment-link disqus-comment-count" data-disqus-url="https://huchengzhen.github.io/2018/04/16/hello-world/">评论</a>
     
 
         </footer>
@@ -475,19 +471,20 @@ window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMin
 </footer>
         
     
-    <script>
-    var disqus_config = function () {
-        
-        this.page.identifier = '';
-    };
-    (function() { 
-        var d = document, s = d.createElement('script');  
-        s.src = '//' + 'blog-huchengzhen-com' + '.disqus.com/count.js';
-        s.setAttribute('data-timestamp', +new Date());
-        (d.head || d.body).appendChild(s);
-    })();
-</script>
-
+	<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+	<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+	<script>
+		var gitment = new Gitment({
+			owner: 'Huchengzhen',
+			repo: 'gitment-comments',
+			oauth: {
+				client_id: '40cc101b711540039736',
+				client_secret: 'd7c1436fea16365da628d6b8c91739613df644e4',
+			},
+		})
+		gitment.render('commentContainer')
+	</script>
+	
 
 
 
