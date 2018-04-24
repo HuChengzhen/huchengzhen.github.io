@@ -3,19 +3,19 @@
 <head>
     <meta charset="utf-8">
     
-    <title>About | 胡诚真的博客</title>
+    <title>设置自己的shadowsocks服务器 | 胡诚真的博客</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-    <meta name="description" content="asdfsaf">
-<meta property="og:type" content="website">
-<meta property="og:title" content="About">
-<meta property="og:url" content="https://huchengzhen.github.io/about/index.html">
+    <meta name="description" content="在购买了国外的VPS后，不妨利用这个资源设置自己的shadowsocks服务器。 安装 pip $ sudo apt-get install python3-pip 安装 shadowsocks $ sudo pip install shadowsocks 创建一个配置文件shadowsocks.json，复制一下的内容 12345678&amp;#123;   &amp;quot;server&amp;quot;:&amp;q">
+<meta property="og:type" content="article">
+<meta property="og:title" content="设置自己的shadowsocks服务器">
+<meta property="og:url" content="https://huchengzhen.github.io/2018/04/24/设置自己的shadowsocks服务器/index.html">
 <meta property="og:site_name" content="胡诚真的博客">
-<meta property="og:description" content="asdfsaf">
+<meta property="og:description" content="在购买了国外的VPS后，不妨利用这个资源设置自己的shadowsocks服务器。 安装 pip $ sudo apt-get install python3-pip 安装 shadowsocks $ sudo pip install shadowsocks 创建一个配置文件shadowsocks.json，复制一下的内容 12345678&amp;#123;   &amp;quot;server&amp;quot;:&amp;q">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-04-17T10:04:10.676Z">
+<meta property="og:updated_time" content="2018-04-24T14:03:09.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="About">
-<meta name="twitter:description" content="asdfsaf">
+<meta name="twitter:title" content="设置自己的shadowsocks服务器">
+<meta name="twitter:description" content="在购买了国外的VPS后，不妨利用这个资源设置自己的shadowsocks服务器。 安装 pip $ sudo apt-get install python3-pip 安装 shadowsocks $ sudo pip install shadowsocks 创建一个配置文件shadowsocks.json，复制一下的内容 12345678&amp;#123;   &amp;quot;server&amp;quot;:&amp;q">
     
 
     
@@ -190,7 +190,7 @@
 </aside>
 
             
-            <section id="main"><article id="page-" class="article article-type-page" itemscope itemprop="blogPost">
+            <section id="main"><article id="post-设置自己的shadowsocks服务器" class="article article-type-post" itemscope itemprop="blogPost">
     <div class="article-inner">
         
         
@@ -198,10 +198,24 @@
                 
     
         <h1 class="article-title" itemprop="name">
-            About
+            设置自己的shadowsocks服务器
         </h1>
     
 
+                
+                    <div class="article-meta">
+                        
+    <div class="article-date">
+        <i class="fa fa-calendar"></i>
+        <a href="/2018/04/24/设置自己的shadowsocks服务器/">
+            <time datetime="2018-04-24T13:49:01.000Z" itemprop="datePublished">2018-04-24</time>
+        </a>
+    </div>
+
+
+                        
+                        
+                    </div>
                 
             </header>
         
@@ -209,7 +223,18 @@
         <div class="article-entry" itemprop="articleBody">
         
             
-            <p>asdfsaf</p>
+            <p>在购买了国外的VPS后，不妨利用这个资源设置自己的shadowsocks服务器。</p>
+<p>安装 pip</p>
+<p><code>$ sudo apt-get install python3-pip</code></p>
+<p>安装 shadowsocks</p>
+<p><code>$ sudo pip install shadowsocks</code></p>
+<p>创建一个配置文件<code>shadowsocks.json</code>，复制一下的内容</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">   &quot;server&quot;:&quot;0.0.0.0&quot;,</span><br><span class="line">   &quot;server_port&quot;:8388,</span><br><span class="line">   &quot;local_port&quot;:0,</span><br><span class="line">   &quot;password&quot;:&quot;[password]&quot;,</span><br><span class="line">   &quot;timeout&quot;:600,</span><br><span class="line">   &quot;method&quot;:&quot;aes-256-cfb&quot;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>填入你自己的密码。你也可以设置你的监听端口和加密方法。</p>
+<p>开启服务器</p>
+<p><code>$ sudo ssserver -c shadowsocks.json -d start</code></p>
+<p>停止服务器</p>
+<p><code>$ sudo ssserver -c shadowsocks.json -d stop</code></p>
 
         
         </div>
@@ -262,6 +287,16 @@ window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMin
     </div>
     
         
+<nav id="article-nav">
+    
+    
+        <a href="/2018/04/24/CocoaPods安装加速的方法/" id="article-nav-older" class="article-nav-link-wrap">
+            <strong class="article-nav-caption">下一篇</strong>
+            <div class="article-nav-title">CocoaPods安装加速的方法</div>
+        </a>
+    
+</nav>
+
 
     
 </article>
